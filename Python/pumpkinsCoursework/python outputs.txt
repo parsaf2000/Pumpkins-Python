@@ -1,0 +1,114 @@
+Index(['id', 'place', 'weight_lbs', 'grower_name', 'city', 'state_prov',
+       'country', 'gpc_site', 'seed_mother', 'pollinator_father', 'ott',
+       'est_weight', 'pct_chart', 'variety', 'dataset_id'],
+      dtype='object')
+Index(['id', 'place', 'weight_lbs', 'grower_name', 'city', 'state_prov',
+       'country', 'gpc_site', 'seed_mother', 'pollinator_father', 'ott',
+       'est_weight', 'pct_chart', 'variety', 'dataset_id'],
+      dtype='object')
+Heaviest pumpkin row:
+          id place   weight_lbs  ... pct_chart variety dataset_id
+2247  2021-P     1  2813.310523  ...  5.898268  Casper         14
+
+[1 rows x 15 columns]
+Heaviest pumpkin details:
+  Weight (lbs): 2813.3105225591353
+  Variety: Casper
+  Location: Semproniano , Italy
+   weight_lbs   weight_kg
+0  719.729726  326.463646
+1  287.168451  130.257312
+2  457.270899  207.414422
+3  313.587005  142.240557
+4  784.657083  355.914176
+    weight_kg weight_class
+0  326.463646       medium
+1  130.257312        light
+2  207.414422       medium
+3  142.240557        light
+4  355.914176       medium
+Countries in the dataset:
+country
+United States      10019
+Canada              2154
+Germany             1087
+Italy                452
+Austria              373
+Japan                353
+Belgium              319
+United Kingdom       182
+Spain                165
+The Netherlands      160
+Slovenia             160
+France               122
+Portugal             109
+Switzerland          104
+New Zealand           81
+Finland               54
+Poland                46
+Ireland                9
+Australia              4
+Luxembourg             2
+Unknown country        1
+Name: count, dtype: int64
+Filtered countries (after applying filter):
+country
+Spain       165
+Portugal    109
+Poland       46
+Name: count, dtype: int64
+Saved pumpkins_filtered.csv
+Mean pumpkin weight (kg) by country and variety:
+country   variety            
+Poland    Atlantic Giant         313.616694
+          Autumn Gold            430.581475
+          Big Max                349.288756
+          Big Moose              453.950088
+          Blue Hubbard           243.500019
+          Casper                 267.509755
+          Champion               558.404387
+          Cinderella             637.129721
+          Connecticut Field      272.186146
+          Dill's Atlantic        462.475848
+          Early Giant            371.499789
+          Howden                 298.230411
+          Jack O'Lantern         540.306291
+          Rouge Vif d’Etampes    418.403059
+          Spirit                 360.984196
+          Wolf                   244.247655
+Portugal  Atlantic Giant         235.174860
+          Autumn Gold            211.330519
+          Big Max                203.332185
+          Big Moose              253.851197
+          Blue Hubbard           269.337150
+          Casper                 226.019275
+          Champion               174.469563
+          Cinderella             222.356534
+          Connecticut Field      209.917609
+          Dill's Atlantic        194.251702
+          Early Giant            156.213023
+          Howden                 174.528680
+          Jack O'Lantern         243.505920
+          Prizewinner            150.256213
+          Rouge Vif d’Etampes    176.873432
+          Spirit                 308.344423
+          Wolf                   308.706127
+Spain     Atlantic Giant         276.214760
+          Autumn Gold            337.827986
+          Big Max                317.794705
+          Big Moose              222.054080
+          Blue Hubbard           197.934626
+          Casper                 338.170107
+          Champion               295.166002
+          Cinderella             260.961690
+          Connecticut Field      313.855109
+          Dill's Atlantic        554.671575
+          Early Giant            279.953125
+          Howden                 249.868109
+          Jack O'Lantern         286.668124
+          Prizewinner            235.313649
+          Rouge Vif d’Etampes    339.205029
+          Spirit                 380.567934
+          Wolf                   372.378926
+Name: weight_kg, dtype: float64
+Saved pumpkins_summary.csv
